@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist --nojekyll"
+    "deploy:ghpages": "VITE_BASE_URL=/todo/ npm run build && gh-pages -d dist --nojekyll"
   },
   "dependencies": {
     "react": "^18.3.1",
